@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
-        <title>lab9</title>
-        
+        <title>lab10</title>
+
 		<!--put your external stylesheet links here-->
 		<link rel="stylesheet" href="css/styles.css">
 		<!-- link to leaflet styles -->
@@ -16,17 +17,68 @@
     </head>
 
     <body>
+      <style>
+      h1 {text-align: center;}
+      h2 {text-align: center;}
+
+      /* Style buttons */
+      select {
+      background-color: #F1A99B; /* Blue background */
+      border: none; /* Remove borders */
+      color: white; /* White text */
+      padding: 8px 8px; /* Some padding */
+      margin: 0.75em;
+      border-radius: 15px 50px;
+      font-size: 16px; /* Set a font size */
+      cursor: pointer; /* Mouse pointer on hover */
+    }
+
+    /* Darker background on mouse-over */
+    select:hover{
+        background: #DDF3F0;
+      }
+      select:active{
+        background: #DDF3F0;
+      }
+      </style>
+
+
+      <!-- adding a Title -->
+      <h1 style="color:#F1A99B;font-size:25px; letter-spacing: 0.30em;
+      font-family:'Quicksand', sans-serif; font-weight: 450;"> Lab 10 </h1>
+
+    <body>
         <!--put your initial page content here-->
-		<div id="div1">
-		</div>
+        <div id="div1">
+        <!-- This is inside basic html container -->
+        <p> <b> Q1- </b> Changed the Map Layer to OpenStreetMap_Mapnik
+        <p> <b> Q2- </b> The <i>styleAll</i> function is used to change the design of a feature, in our case the "stations" points. It can change any feature's size, opacity, color, weight, and etc. The conditional statement is asking if the freature is <i>point</i> (and not a polygon for example), then return it with specific style that we assigned it with.
+        <br>
+        </br>
+            <b> Q3-</b> blue = Canadian Stations
+        <br>
+        </br>
+            <b> Q5-</b> <i>layer.options.fill</i> is boolean because it returns true/False. Whereas <i>layer.getLatLng()</i> returns values of the geographic coordinates.
+        <br>
+        </br>
+            <b> Q6- </b> Becuase we put the radius to 80 it gave us huge circles with no color as we put the oprion to false <i>(layer.options.fill = false)</i>
+        </p>
+      </div>
+
+    <!-- adding second title -->
+    <h2 style="color:#F1A99B;font-size:22px; letter-spacing: 0.30em;
+    font-family:'Quicksand', sans-serif; font-weight: 450;">
+      <select class="li-nav" name="dropdown" id="dropdown" onChange="loadMap(this.value);">
+        			<option value="map0" selected="selected" disabled>Load a map</option>
+        			<option value='Stations'>Amtrak Stations</option>
+        			<option value='Megacities'>Megacities</option>
+        		</select> </h2>
+
 		<div id="mapdiv">
-			
 		</div>
-		
         <!--you can also use this space for internal scripts; you would place these within <script> tags-->
 
-        
-		
+
 		<!--put your external script links here-->
         <script type="text/javascript" src="js/main.js"></script>
     </body>

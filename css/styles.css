@@ -3,16 +3,22 @@ body {
 }
 
 #div1 {
-    height: 200px;
-	width: 80%;
-	padding: 10px;
+    height: 250px;
+    width: 80%;
+    padding: 5px;
     margin: 0 auto;
-	background-color: cyan;
+    background-color: #deeaee;
     border-style: solid;
-	border-width: 5px;
-    border-color: black;
+    border-width: 3px;
+    border-color: #b1cbbb;
 }
 
 #mapdiv {
-	height: 480px;
+    height: 400px;
+    width: auto;
+    padding: 10px;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #eea29a;
 }
